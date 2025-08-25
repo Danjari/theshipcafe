@@ -148,8 +148,8 @@ export default function SprintPage() {
       <div className="min-h-screen bg-background p-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
-            <Image src="/kiwi.png" alt="Kiwi" width={100} height={100} className="mx-auto mb-4" />
-            <h1 className="font-montserrat font-black text-3xl mb-2">Perfect team assembled! Let's ship together ☕</h1>
+            <Image src="/kiwi.png" alt="Kiwi" width={100} height={100} className="mx-auto mb-4 animate-bounce" />
+            <h1 className="font-montserrat font-black text-3xl mb-2">Perfect team assembled! Let&apos;s ship together ☕</h1>
             <p className="text-muted-foreground">50 minutes of focused collaboration</p>
           </div>
 
@@ -571,7 +571,7 @@ export default function SprintPage() {
   return (
     <div className="min-h-screen bg-background p-4">
       <div className="container mx-auto max-w-2xl text-center">
-        <KiwiMascot className="mx-auto mb-6" />
+        <Image src="/kiwi.png" alt="Kiwi" width={100} height={100} className="mx-auto mb-6 animate-bounce" />
         <h2 className="font-montserrat font-black text-3xl mb-4">Incredible collaboration! 🎉</h2>
 
         <Card className="mb-8">
