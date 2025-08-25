@@ -10,6 +10,7 @@ import { useRouter } from "next/router"
 import { RoomCard } from "@/components/roomCard"
 import { BuildFeedItem } from "@/components/buildFeedItem"
 import { SprintPodCard } from "@/components/sprintPodCard"
+import Image from "next/image"
 
 export default function HomePage() {
   const [currentView, setCurrentView] = useState("dashboard")
@@ -93,12 +94,12 @@ function DashboardView() {
       <section className="text-center py-12 relative">
         <div className="absolute inset-0 bg-gradient-to-br from-card/50 to-background rounded-3xl"></div>
         <div className="relative z-10">
-          <KiwiMascot className="mx-auto mb-6" />
+          <Image src="/kiwi.png" alt="Kiwi" width={100} height={100} className="mx-auto mb-6" />
           <h2 className="font-montserrat font-black text-4xl md:text-6xl mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Welcome to The Ship Café
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Where builders, makers, and creators come together to ship amazing projects. Grab a virtual coffee and let's
+            Where builders, makers, and creators come together to ship amazing projects. Grab a virtual coffee and let&apos;s
             build something incredible! ☕
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
