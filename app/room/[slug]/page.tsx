@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { RoomInterior } from "@/components/roomInterior"
 import { Code } from "lucide-react"
+import Image from "next/image"
 
 const roomData = {
   "frontend-table": {
@@ -133,7 +134,7 @@ export default function RoomPage() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-card/30 to-background flex items-center justify-center">
         <div className="text-center space-y-6">
-          <Image src="/kiwi.png" alt="Kiwi" width={100} height={100} />
+          <Image src="/kiwi.png" alt="Kiwi" width={100} height={100} className="mx-auto animate-bounce" />
           <div className="space-y-2">
             <h2 className="font-montserrat font-bold text-2xl">Welcome to the {room.name}! ☕</h2>
             <p className="text-muted-foreground">Finding you a cozy spot...</p>
